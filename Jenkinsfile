@@ -7,9 +7,10 @@ node {
     }
     stage('Slack Notification'){
     slackSend channel: '#jenkins',
+    baseUrl: 'https://hooks.slack.com/services/'
     color: 'good',
     message: 'welcome to Jenkins, Slack!',
-    teamDomain: 'joy_feebles',
+    teamDomain: 'joyfeebles',
     tokenCredentialId: 'slack-demo'
     }
 }
