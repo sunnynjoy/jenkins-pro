@@ -9,7 +9,7 @@ node {
     slackSend channel: '#jenkins',
     color: 'good',
     message: 'welcome to Jenkins, Slack!',
-    teamDomain: 'joyfeebles',
+    teamDomain: 'joy_feebles',
     tokenCredentialId: 'slack-demo'
     }
 }
