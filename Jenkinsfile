@@ -5,4 +5,11 @@ node {
     stage('Compile-Package') {
        sh 'mvn package'
     }
+    stage('Slack Notification'){
+    slackSend channel: '#jenkins',
+    color: 'good',
+    message: 'welcome to Jenkins, Slack!',
+    teamDomain: 'joyfeebles',
+    tokenCredentialId: 'slack-demo'
+    }
 }
